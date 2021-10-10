@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  
+<body>
+  <div class="container">
+<header>
+  <h1 id="title">Coding career Survey Form</h1>
+<p id="description"><i>Thank you for taking the time to answer our survey</i>
+  </p>  
+</header>
+
+<form id ="survey-form">
+  
+  <div class="form-group">
+    <label for="name" id="name-label">First name</label>
+  <input type="text" id="name" class="form-control" name="name" placeholder="Enter your name" required>
+    <br><br>   
+  </div>
+  
+  <div class="form-group">
+ <label for="email" id="email-label">Email</label>
+  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+  <br><br>
+    </div>
+  
+      <div class="form-group">
+  <label for="number" id="number-label">Age</label>
+  <input class="form-control" type="number" id="number" name="number" placeholder="18" required min="14" max="99">
+  <br><br>
+  </div>
+  
+  <div class="form-group">
+  <label for="dropdown">Why did you start coding?</label>
+<select id="dropdown" name="dropdown" class="form-control">
+  <option value="reason">No particular reason</option>
+  <option value="liked">I always liked computers</option>
+  <option value="salary">Good salary</option>
+</select>
+    <br><br>
+    </div>
+  
+  <div class="form-group">
+  <label for="dropdown">Which career would you like?</label>
+  <div class="checkbox">
+  <label><input type="checkbox" class="input-checkbox" value="front" >Front-end developer</label>
+</div>
+<div class="checkbox">
+  <label><input class="input-checkbox" type="checkbox" value="back">Back-end developer</label>
+  </div>
+</div><br><br>
+  
+  <label for="dropdown">Would you reccomend coding to a friend?</label>
+  <div class="radio">
+  <label><input class="input-radio" type="radio" name="optradio" value="definetly">Definetly</label>
+</div>
+<div class="radio">
+  <label><input class="input-radio" type="radio" name="optradio" value="maybe">Maybe</label>
+</div>
+<div>
+  <label><input class="input-radio" type="radio" name="optradio" value="notsure">Not sure</label>
+</div><br><br>
+  
+  <label for="comment-label">Any other detail you want to share?</label>
+  <textarea class="input-area" name="message" id="message" rows="5" placeholder="Enter your comment here...">
+</textarea><br><br>
+<button type="submit" id="submit" class="form-control">Submit</button> 
+  </div>
+</form>
+</body>
+</html>

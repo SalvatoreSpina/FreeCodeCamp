@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 00;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 
+115deg
+, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://imgur.com/EUXq48q.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#survey-form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 4rem;
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+  border-radius: 0.25rem;
+  margin: 1em 20em;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+.form-group {
+  margin: 0 auto auto auto;
+  padding: 0.25rem;  
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-area {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#submit {
+  background-color: green;
+  border-radius: 2px;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1500px) { 
+  #survey-form {
+    padding: 2.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 1em 10em;
+  }
+}
+
+@media screen and (max-width: 1000px) { 
+  #survey-form {
+    padding: 2.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 1em 3em;;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #survey-form {    
+  padding: 2.5rem;
+  border-radius: 0.25rem;
+  margin: 1em 0em;;
+ }
+}

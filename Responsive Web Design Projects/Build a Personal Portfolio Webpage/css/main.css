@@ -1,0 +1,61 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+      }
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+  font-size: 3.5rem;
+        }
+      }
+
+#welcome-section { 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #03256c;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+main {
+  background-color: #5e8b7e;
+  color: #dfeeea;
+}
+
+.col1 {
+  padding: 0 auto;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
+.img-thumbnail {
+ width: 100%;
+ height: 225px;
+}
+
+#text {
+  text-align: center;
+}
+
+footer {
+  background-color: #5e8b7e;
+  color: #dfeeea;
+}
+
+.card-text {
+  font-size: 1em auto;
+  font-weight: 700;
+  color: #5e8b7e;
+}
